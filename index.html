@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Jack's Website</title>
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+              max-width: 800px;
+                margin: auto;
+            }
+         
+            /* navigation menu */
+            nav {
+                background: rgb(20, 19, 19);
+               margin: 0 auto;
+               margin-bottom:20px
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(215, 30, 221);
+            }
+         
+            /* main container area beneath menu */
+            main {
+                background: rgb(14, 13, 10);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px rgb(52, 129, 216) ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+         </style>
+    </head>
+    
+    <body>
+    <div id="all-contents"> <!-- All content goes here-->
+        <nav>
+            <h1>Jack's Website</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <a href="index.html"> Home </a>
+                </li>
+                <li class="nav-li">
+                    <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <!--sidebar -->
+            <div class="sidebar">
+        <img class="sidebar-img" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Black_colour.jpg" style="width:200px;height:200px;">
+            </div> 
+            <!-- content -->
+            <div class="content">
+<h2>Jack</h2>
+<p>Student at Mandeville High</p>
+<!-- interests-->
+    <div id="interests">
+       
+    </div>
+    <h3>Interests</h3>
+    <ul>
+        <li>Nothing</li>
+        <li>Not Anything</li> 
+        <li>None</li>
+    </ul>
+        </main>
+    </div>
+    
+    </body>
+</html>
