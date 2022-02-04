@@ -47,7 +47,7 @@
 			
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
-
+			board.on('click', handleBoardClick);
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
@@ -74,6 +74,7 @@ var points = 0;
 var speed = 10;
 var positionY = 0;
 var speedY = 10;
+var misclicks = 0;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -117,6 +118,15 @@ if (speed > 0) {
 positionX = Math.random() * boardWidth;
 positionY = Math.random() * boardHeight;
 changeBoxText(points);
+misclicks = 0;
+			};
+			function handleBoardClick() {
+misclicks = misclicks + 1;
+			
+if (misclicks > 10) {
+   endGame();
+
+};
 			};
 		})();
 	</script>
