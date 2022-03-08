@@ -73,7 +73,10 @@ while (loopsCompleted < 100) {
         Function. If that circle drifts off the screen, this Function should move
         it to the opposite side of the screen.
         */
-        
+        var rightEdge = circle.x + circle.radius;
+        var leftEdge = circle.x - circle.radius;
+        var uppderEdge = circle.y - circle.radius;
+        var lowerEdge = circle.y + circle.radius
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
